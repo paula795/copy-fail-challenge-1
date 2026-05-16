@@ -84,7 +84,8 @@ echo "  Módulos cargados con algif:"
 echo "  $(cat /proc/modules | grep alg || echo '  (ninguno detectado aún)')"
 echo ""
 EOF
-
+cp /usr/bin/su "$INITRAMFS_DIR/usr/bin/su"
+chmod 4755 "$INITRAMFS_DIR/usr/bin/su"
 # ── Script init ────────────────────────────────────────────────────────────────
 cat > "$INITRAMFS_DIR/init" << 'INITEOF'
 #!/bin/sh
