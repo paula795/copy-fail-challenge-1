@@ -59,7 +59,8 @@ scripts/config --enable CRYPTO
 scripts/config --enable CRYPTO_USER_API        # AF_ALG base
 scripts/config --enable CRYPTO_USER_API_AEAD   # algif_aead  ← VULNERABLE
 scripts/config --enable CRYPTO_USER_API_SKCIPHER
-scripts/config --enable CRYPTO_AUTHENCESN      # el template que escribe de más
+scripts/config --enable CRYPTO_AUTHENC
+scripts/config --enable CRYPTO_AUTHENC_ESN      # el template que escribe de más
 scripts/config --enable CRYPTO_AES
 scripts/config --enable CRYPTO_CBC
 scripts/config --enable CRYPTO_HMAC
